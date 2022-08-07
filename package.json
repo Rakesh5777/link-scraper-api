@@ -1,0 +1,26 @@
+{
+  "name": "link-scraper",
+  "version": "1.0.0",
+  "description": "link scraper to get meta tags ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakesh5777/link-scraper-api.git"
+  },
+  "keywords": [
+    "link-scraper",
+    "link-preview"
+  ],
+  "author": "rakesh.k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rakesh5777/link-scraper-api/issues"
+  },
+  "homepage": "https://github.com/Rakesh5777/link-scraper-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
