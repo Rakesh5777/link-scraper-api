@@ -3,19 +3,16 @@ import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import getUrls from 'get-urls';
 import { load } from 'cheerio';
+import cors from "cors"
+
 
 dotenv.config();
 
 const app: Express = express();
 const port = process.env.PORT;
+app.use(cors());
 
 app.use(express.json());
-
-app.use(function (_, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://link-preview-api-ts.herokuapp.com"); // update to match the domain you will make the request from
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
 
 const getMetaData = (text: string) => {
     const urls = [...getUrls(text).values()];
